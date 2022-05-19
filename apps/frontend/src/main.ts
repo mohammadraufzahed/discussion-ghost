@@ -1,4 +1,5 @@
-import "./styles/global.scss"
-import "normalize.css/normalize.css"
+import "./styles/global.scss";
+import "normalize.css/normalize.css";
+import app from "./functions/app";
 
-console.dir("Hello World")
+app();
