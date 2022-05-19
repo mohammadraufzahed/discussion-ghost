@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "serve": "serve -s dist/",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "serve": "^13.0.2",
     "typescript": "^4.5.4",
     "vite": "^2.9.9"
   },

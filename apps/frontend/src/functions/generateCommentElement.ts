@@ -40,7 +40,7 @@ function generateBodyElement(comment: Comment, el: HTMLDivElement) {
   const element: HTMLDivElement = document.createElement("div");
   generateBodyTitleElement(comment, element);
   generateBodyContentElement(comment.content, element);
-  generateBodyActionsElement(comment, element);
+  generateBodyActionsElement(element);
   if (comment.subComments) {
     if (comment.subComments.length >= 1) {
       const subCommentsElement: HTMLDivElement = document.createElement("div");
@@ -77,7 +77,7 @@ function generateBodyContentElement(content: string, el: HTMLDivElement) {
   // Append to el
   el.appendChild(contentElement);
 }
-function generateBodyActionsElement(comment: Comment, el: HTMLDivElement) {
+function generateBodyActionsElement(el: HTMLDivElement) {
   // Generate the base element and set attributes
   const element: HTMLDivElement = document.createElement("div");
   element.className = "actions d-inline-flex gap-4 fw-normal fs-6";
