@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/all.min.css" />
+  </head>
+  <body>
+    <!-- Main -->
+    <main
+      class="container-fluid bg-light h-100 d-flex justify-content-center align-items-center"
+    >
+      <!-- Discussion box -->
+      <div class="bg-body d-flex flex-column p-5 w-50 gap-4">
+        <!-- Title -->
+        <span class="fw-bold fs-4">Discussion</span>
+        <!-- Input -->
+        <div
+          class="d-inline-flex gap-2 justify-content-center align-items-center"
+        >
+          <figure class="profile">
+            <img
+              class="img-fluid rounded-circle border-1 border-dark"
+              src="https://randomuser.me/api/portraits/thumb/men/75.jpg"
+              width="50px"
+            />
+          </figure>
+          <div class="input-group input h-auto">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="What are your thoughts?"
+            />
+          </div>
+          <button class="btn comment-btn">Comment</button>
+        </div>
+        <!-- Line -->
+        <hr />
+        <!-- Comments container -->
+        <div class="container-fluid d-flex flex-column gap-5">
+          <!-- Comment -->
+          <div class="comment d-inline-flex gap-3">
+            <figure class="profile">
+              <img
+                class="img-fluid rounded-circle border-1 border-dark"
+                src="https://randomuser.me/api/portraits/thumb/men/75.jpg"
+                width="100px"
+              />
+            </figure>
+            <div>
+              <div>
+                <span class="fw-bold"> Rob Hope </span>
+                <span class="fw-light"> . 45 min ago</span>
+              </div>
+              <p class="fw-normal fs-6 w-100 mt-2">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Doloribus perspiciatis quas voluptates tempora dignissimos
+                nostrum expedita itaque, obcaecati quasi illo!
+              </p>
+              <div class="actions d-inline-flex gap-4 fw-normal fs-6">
+                <span
+                  ><i class="fa-solid fa-angle-up"></i> &nbsp;&nbsp;Upvote</span
+                >
+                <span>Reply</span>
+              </div>
+            </div>
+          </div>
+          <!-- Comment -->
+          <div class="comment d-inline-flex gap-3">
+            <figure class="profile">
+              <img
+                class="img-fluid rounded-circle border-1 border-dark"
+                src="https://randomuser.me/api/portraits/thumb/men/75.jpg"
+                width="100px"
+              />
+              <!-- Line -->
+              <div class="line"></div>
+            </figure>
+            <div>
+              <!-- Title -->
+              <div>
+                <span class="fw-bold"> Rob Hope </span>
+                <span class="fw-light"> . 45 min ago</span>
+              </div>
+              <!-- Paragraph -->
+              <p class="fw-normal fs-6 w-100 mt-2">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Doloribus perspiciatis quas voluptates tempora dignissimos
+                nostrum expedita itaque, obcaecati quasi illo!
+              </p>
+              <!-- Actions -->
+              <div class="actions d-inline-flex gap-4 fw-normal fs-6">
+                <span
+                  ><i class="fa-solid fa-angle-up"></i> &nbsp;&nbsp;Upvote</span
+                >
+                <span>Reply</span>
+              </div>
+              <!-- Sub comments -->
+              <div class="sub-comments">
+                <div class="comment d-inline-flex gap-3">
+                  <figure class="profile">
+                    <img
+                      class="img-fluid rounded-circle border-1 border-dark"
+                      src="https://randomuser.me/api/portraits/thumb/men/75.jpg"
+                      width="100px"
+                    />
+                  </figure>
+                  <div>
+                    <div>
+                      <span class="fw-bold"> Rob Hope </span>
+                      <span class="fw-light"> . 45 min ago</span>
+                    </div>
+                    <p class="fw-normal fs-6 w-100 mt-2">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Doloribus perspiciatis quas voluptates tempora dignissimos
+                      nostrum expedita itaque, obcaecati quasi illo!
+                    </p>
+                    <div class="actions d-inline-flex gap-4 fw-normal fs-6">
+                      <span
+                        ><i class="fa-solid fa-angle-up"></i>
+                        &nbsp;&nbsp;Upvote</span
+                      >
+                      <span>Reply</span>
+                    </div>
+                    <div class="sub-comments"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      type="module"
+      src="./node_modules/bootstrap/dist/js/bootstrap.min.js"
+    ></script>
+    <script type="module" src="/src/main.ts"></script>
+    <script src="/js/all.min.js"></script>
+    <script></script>
+  </body>
+</html>

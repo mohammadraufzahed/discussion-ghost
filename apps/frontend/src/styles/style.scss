@@ -1,0 +1,48 @@
+.container {
+  .input {
+    > input {
+      height: 33px;
+    }
+  }
+
+  .profile {
+    margin: 0;
+    padding: 0;
+  }
+
+  .comment-btn {
+    background-color: #7e34f6;
+    color: white;
+    height: 40px;
+    &:hover {
+      color: white;
+      background-color: #491e90;
+    }
+  }
+
+  .comment {
+    & & {
+      margin-top: 2em;
+    }
+  }
+
+  .line {
+    width: 2px;
+    height: 80%;
+    background-color: #c7c8c9;
+    margin: auto;
+    margin-top: 0.6em;
+  }
+
+  .actions {
+    > span {
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.5);
+      transition: 400ms ease;
+      transition-property: color;
+      &:hover {
+        color: rgba(0, 0, 0, 0.9);
+      }
+    }
+  }
+}
