@@ -5,7 +5,7 @@ async function setProfile(): Promise<void> {
   const strProfile: string | null = localStorage.getItem("profile");
   if (strProfile) {
     const profile: Profile = JSON.parse(strProfile);
-    const userProfile: HTMLInputElement | null = document.querySelector(
+    const userProfile: HTMLMediaElement | null = document.querySelector(
       "#user_profile > img"
     );
     if (userProfile) {
