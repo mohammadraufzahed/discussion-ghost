@@ -1,0 +1,14 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "json-server --watch fake-db.json -p 3031"
+  },
+  "keywords": [],
+  "author": "Mohammad Raufzahed <mohammadraufzahed@protonmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}
