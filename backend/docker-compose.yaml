@@ -1,0 +1,30 @@
+services:
+  database:
+    image: mariadb
+    restart: always
+    networks:
+      - database
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_DATABASE: goback
+      MARIADB_USER: goback
+      MARIADB_PASSWORD: goback
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+  api:
+    image: goback
+    networks:
+      - database
+    restart: always
+    depends_on:
+      - database
+    ports:
+      - 8000:8000
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+networks:
+  database:
